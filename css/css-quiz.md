@@ -396,3 +396,10 @@ h2 + p {
 - Icon fonts can be used to replace custom fonts.
 - Icon fonts can be styled with typography related properties such as font-size and color. <<<<---Correct
 - Icon fonts are also web safe fonts.
+
+#### Q37. What selector and property would you use to scale an element to be 50% smaller on hover?
+- element:hover{transform: scale(50%);}
+- element:hover{transform: scale(0.5);} <<<<---Correct
+- element::hover{scale:50%);}
+- element::hover{scale:0.5);}
+
