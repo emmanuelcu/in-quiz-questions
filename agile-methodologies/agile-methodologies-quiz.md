@@ -204,3 +204,15 @@
 - [ ] Gemba walk
 - [ ] Total Quality Management
 - [ ] Kaizen
+
+#### Q35. Which the technique does not help prioritize the backlog?
+- [ ] WSJF
+- [x] MoSCoW
+- [ ] Kano
+- [ ] Kaizen
+
+#### Q36. What is the definition of capacity?
+- [ ] It is an adjustment to velocity, used in Sprint Planning, to account for reduced availability of team members during the upcoming sprint.
+- [x] It is the maximum number of stories that will be allowed in a sprint.
+- [ ] It is the maximum number of teams that a Team Facilitator can support concurrently.
+- [ ] It is an inventory of the team's knowledge and skills that is used to plan the work that they do.
