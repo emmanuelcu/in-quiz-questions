@@ -117,7 +117,7 @@ AWS Assessment
 - [ ] ORDS for Oracle
 - [ ] Redshift
 - [ ] Neptune
-- [ ] DynamoDB
+- [x] DynamoDB
 
 
 #### Q17. You need a schemaless database. Which Amazon database service provides that solution?
