@@ -644,3 +644,11 @@ new logThis();
 - [ ] stop()
 - [x] preventDefault()
 - [ ] prevent()
+
+#### Q63. Which looping statement in JavaScript ensures that at least a single iteration will happen?
+
+- [ ] forEach
+- [x] do...While
+- [ ] for
+- [ ] while
+
