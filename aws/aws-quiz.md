@@ -219,3 +219,43 @@ Elastic IP addresses and allow all inbound HTTPS traffic.
 - [ ] bucketpolicy1 allows any user coming from the IP range of 68.249.108.0 to access objects in the userreports bucket and denies access to 68.249.108.128.
 - [ ] bucketpolicy1 allows any user to perform any action on the objects in the userreports bucket - except anyone coming from the IP of 68.249.108.128.
 - [x] bucketpolicy1 allows any user coming from the IP range of 68.249.108.0 to 68.249.108.255 to access objects in the userreports bucket-except anyone coming from the IP of 68.249.108.128.
+
+#### Q29. A nontechnical client wants to migrate a WordPress site to AWS from a private server managed by a third-party hosting company. Which AWS service should you recommend to migrate the site to?
+
+- [ ] CloudFront
+- [x] S3
+- [ ] an EC2 instance launched from the official WordPress AMI
+- [ ] Lightsail
+
+#### Q30. What does the following AWS CLI `create-service`command for ECS do?
+
+```
+aws ecs create-service \
+ -- cluster production \
+ -- service-name rest-api \
+ -- task-definition rest-api:1 \
+ -- desired-count 2 \
+ -- launc-type "FARGATE" \
+ -- network-configuration \
+ "awsvpcConfiguration={subnets=[subnet-0b29129ab],securityGroups=[sg-0b29129ab]}"
+
+```
+
+- [ ] launches two containers onto Fargate into the existing production cluster using the rest-api task definition
+- [ ] creates a service definition for the rest-api task; puts two containers on the production cluster when launched with the ecs-cli up command
+- [ ] changes the security groups of the running rest-api task
+- [ ] creates a cluster called production and launches two containers onto Fargate with the rest-api task definition
+
+#### Q31. Your web application is getting a suspicious amount of bad requests from foreign IP addresses. Your business is operating in only a few countries and you would like to block any other traffic. What is the best practice for limiting access to your web application by country?
+
+- [ ] Use Web Application Firewall and create a geo match condition to drop all requests from countries that aren't on your allow list.
+- [ ] Use Application Load Balancer to create a new routing rule that looks at source IP address. Add an IP block for the countries that have access. 
+- [ ] Host the front end of your website in CloudFront and configure a geo restriction on the distribution.
+- [ ] Use CloudTrail to monitor the IP addresses of the bad requests. Use Lambda to add these IP addresses to an Application Load Balancer rule that blocks the IPs.
+
+#### Q32. You have a Linux EC2 instance that is not responding to requests and you can not connect to it via SSH. Using the EC2 console, you issued a command to stop the instance, but for the past 10 minutes the instance has been in the "stopping" state. What is the next step you should take?
+
+- [ ] Edit the instance properties and increase the instance size.
+- [ ] Issue another stop via the EC2 console, and choose the option to forcefully stop the instance.
+- [ ] Create an AMI image of the instance, and choose the option to take the image without restarting the instance.
+- [ ] Contact AWS support. Any further actions could corrupt the file system.
